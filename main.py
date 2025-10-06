@@ -11,6 +11,7 @@ import tmap as tm
 from faerun import Faerun
 from PIL import Image
 
+from utils.custom_colormap import custom_cmap
 from utils import mnist_reader
 
 # Coniguration for the tmap layout
@@ -69,7 +70,7 @@ def main():
     faerun.add_scatter(
         "FMNIST",
         {"x": x, "y": y, "c": color_values, "labels": IMAGE_LABELS},
-        colormap="turbo",
+        colormap=custom_cmap,
         shader="smoothCircle",
         point_scale=2.5,
         max_point_size=10,
