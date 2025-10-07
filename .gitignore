@@ -236,3 +236,5 @@ utils/EliminarDuplicados.py
 output/*
 output/*.html
 output/*.js
+
+!output/.gitkeep
